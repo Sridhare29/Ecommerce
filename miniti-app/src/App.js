@@ -1,9 +1,10 @@
 import './App.css';
-
+import Router from './routes';
+import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <div className="App">
-      <h1>Hello!</h1>
+      <Router/>
     </div>
   );
 }
