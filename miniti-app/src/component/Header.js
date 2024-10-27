@@ -1,12 +1,14 @@
 import React from 'react'
+import {  useNavigate } from 'react-router-dom'
 
 function Header() {
+  const navigate = useNavigate()
   return (
     <div className="p-3" style={{ backgroundColor: 'rgba(135, 206, 250, 0.5)' }}>
     <div className="container d-flex justify-content-between align-items-center">
       <h3 className="mb-0 text-dark">My Website</h3>
       <div className="d-flex align-items-center">
-        <button className="btn btn-outline-dark me-3 rounded-pill"> 
+        <button className="btn btn-outline-dark me-3 rounded-pill" onClick={()=> navigate('/')}> 
           <i className="bi bi-house-door"></i> Home
         </button>
         <input
